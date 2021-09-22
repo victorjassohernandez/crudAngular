@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="en"><head><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <meta charset="utf-8">
+  <title>Frontend</title>
+  <!--<base href="/">-->
+  <base href="https://victorjassohernandez.github.io/crudAngular/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!--Materialize-->
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+          
+  <!--Materialize Icons-->
+  <style type="text/css">@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v103/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');}.material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}</style>
+
+  <!--FontAwesom Icons-->
+  <script src="http://kit.fontawesome.com/5a9f431be6.js" crossorigin="anonymous"></script>
+
+  <!--Script que Activa u oculta la barra lateral de navegación de materialize
+      y también para ocultar o mostrar los modales
+  -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        var side = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(side, {});
+
+        var modal = document.querySelectorAll('.modal');
+        var instances = M.modal.init(modal, {});
+    });
+  </script>
+<link rel="stylesheet" href="styles.31d6cfe0d16ae931b73c.css"></head>
+<body>
+  <app-root></app-root>
+<script src="runtime.81e27cce1cc91940b6f1.js" defer></script><script src="polyfills.4664ee786a3179f3bb93.js" defer></script><script src="main.1c67ca6178a069f09274.js" defer></script>
+
+</body></html>
