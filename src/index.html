@@ -6,6 +6,32 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!--Materialize-->
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+          
+  <!--Materialize Icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--FontAwesom Icons-->
+  <script src="http://kit.fontawesome.com/5a9f431be6.js" crossorigin="anonymous"></script>
+
+  <!--Script que Activa u oculta la barra lateral de navegación de materialize
+      y también para ocultar o mostrar los modales
+  -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        var side = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(side, {});
+
+        var modal = document.querySelectorAll('.modal');
+        var instances = M.modal.init(modal, {});
+    });
+  </script>
 </head>
 <body>
   <app-root></app-root>
